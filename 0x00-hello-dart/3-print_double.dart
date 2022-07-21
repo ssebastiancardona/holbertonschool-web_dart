@@ -1,5 +1,5 @@
 void main() {
-  var s = 3.14159265359;
-  var k = s.toStringAsFixed(s.truncateToDouble() == s ? 0 : 2);
-  print('Double: $k\n');
+  var n = 3.14159265359;
+  var m = n.toStringAsFixed(n.truncateToDouble() == n ? 0 : 2);
+  print('Double: $m\n');
 }
