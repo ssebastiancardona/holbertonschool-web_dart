@@ -1,16 +1,16 @@
 class User {
   int id = 0;
   String name = "";
-  int edad;
+  int age;
   double height;
 
-  User({required this.id, required this.name, required this.edad, required this.height});
+  User({required this.id, required this.name, required this.age, required this.height});
 
   static User fromJson(Map<dynamic, dynamic> userJson) {
     return User(
       id: userJson['id'],
       name: userJson['name'],
-      edad: userJson['age'],
+      age: userJson['age'],
       height: userJson['height'],
     );
   }
@@ -19,11 +19,10 @@ class User {
     return {
       'id': id,
       'name': name,
-      'age': edad,
+      'age': age,
       'height': height,
     };
   }
-
 
   @override
   String toString() {
