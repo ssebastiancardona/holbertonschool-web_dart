@@ -1,12 +1,12 @@
 class User {
-  Strinombre;
-  int edad;
-  double altura;
+  String name;
+  int age;
+  double height;
   
-  User({required this.nombre, required this.edad, required this.altura});
+  User({required this.name, required this.age, required this.height});
   Map toJson() => {
-        'name': nombre,
-        'age': edad,
-	'height': altura,
+        'name': name,
+        'age': age,
+	'height': height,
       };
 }
